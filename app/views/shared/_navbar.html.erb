@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-   <%= image_tag "logo.png" %>   <h13>  Platform</h13>
+   <%= image_tag "logo.png" %>   <h13>  Nutrition</h13>
   </a>
 
   <!-- Right Navigation -->
@@ -11,8 +11,7 @@
 
     <!-- Text link -->
 
-      <%= link_to "All product", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
-<%= link_to "team", team_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
     <%= link_to "contact", contact_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <% if user_signed_in? %>
 
@@ -32,8 +31,8 @@
     <%= link_to "ADD TOOLs", root_path, class:"navbar-wagon-item navbar-wagon-button btn"  %>
 
       <% else %>
-      <%= link_to "Sign UP", new_user_registration_path, class:"navbar-wagon-item navbar-wagon-button btn" %>
-      <%= link_to "Log in", new_user_session_path, class:"navbar-wagon-item navbar-wagon-button btn" %>
+      <%= link_to "Sign UP", new_user_registration_path, class:"navbar-wagon-item btn-warning navbar-wagon-button btn" %>
+      <%= link_to "Log in", new_user_session_path, class:"navbar-wagon-item btn-warning navbar-wagon-button btn " %>
   <% end %>
 
 

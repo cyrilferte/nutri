@@ -1,0 +1,20 @@
+
+  <div class=" wrapper  ">
+    <h2 class="text-center">  Sizing</h2>
+      <div class=" form-signin">
+      <p class ="text-center">
+    <%= simple_form_for @commande do |f| %>
+
+     <%= f.input :vc, as: :integer, label: "Vitamine C" %>
+     <%= f.input :vc, as: :integer, label: "Vitamine D", class:"deux" %>
+    <%= f.input :fer, as: :integer, label: "Fer" %>
+    <%= f.input :cafeine, as: :integer, label: "Cafeine" %>
+    <%= f.input :b12, as: :integer, label: "Vitamine B12" %>
+    <%= f.input :mail, as: :string, label: "Email" %>
+        </p>
+      <%= f.button :submit, "Commande", class:"center-block btn-center btn btn-lg btn-warning btn-block btn-biger2"%>
+    <% end %>
+      </div>
+
+  </div>
+</div>

@@ -1,12 +1,9 @@
 class PagesController < ApplicationController
+before_action :check_for_lockup, except: :home
   def home
+    @commande = Commande.new
   end
-   def home
-    # ...
-  end
-  def team
-    # ...
-  end
+
   def contact
     # ...
   end
